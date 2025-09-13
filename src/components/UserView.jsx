@@ -47,21 +47,22 @@ export default function UserView() {
       </div>
 
       {/* Registration Card */}
+      {/* Registration Card */}
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-6">
         <h3 className="text-xl font-semibold text-gray-700 mb-4">
           Register for Appointment
         </h3>
-        <div className="flex">
+        <div className="flex flex-col sm:flex-row gap-2">
           <input
             type="text"
             value={name}
             placeholder="Enter your name"
             onChange={(e) => setName(e.target.value)}
-            className="flex-1 border rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex-1 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 w-full"
           />
           <button
             onClick={handleRegister}
-            className="bg-blue-600 text-white px-5 py-2 rounded-r-lg hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition w-full sm:w-auto"
           >
             Get Token
           </button>
@@ -82,6 +83,7 @@ export default function UserView() {
           </div>
         )}
       </div>
+
     </div>
   );
 }
