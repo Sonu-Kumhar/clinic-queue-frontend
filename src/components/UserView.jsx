@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { io } from "socket.io-client";
+import BASE_URL from "../config";
 
 const socket = io(BASE_URL); // backend URL
 
